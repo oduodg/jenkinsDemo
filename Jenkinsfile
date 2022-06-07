@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        label "demoAgent"
+    }
     tools {
         jdk('JAVA_HOME')
         maven('M2_HOME')
@@ -23,7 +25,7 @@ pipeline {
     }
     post {
         always {
-            echo "pipeline done!!!"
+            echo "202206070918"
         }
     }    
 }
